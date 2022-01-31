@@ -14,4 +14,12 @@ public class FactorialTest {
         int out = Factorial.calc(5);
         Assert.assertEquals(expected, out);
     }
+
+    @Test
+    public void whenCalculateFactorialForNullThenOne() {
+        int n = 0;
+        int expected = 1;
+        int out = Factorial.calc(0);
+        Assert.assertEquals(expected, out);
+    }
 }
