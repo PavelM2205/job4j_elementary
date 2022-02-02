@@ -6,6 +6,29 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class MatrixCheckTest {
+    @Test
+    public void whenHasMonoVertical() {
+        char[][] board = {
+                {' ', ' ', 'X'},
+                {' ', ' ', 'X'},
+                {' ', ' ', 'X'}
+        };
+        int column = 2;
+        boolean out = MatrixCheck.monoVertical(board, column);
+        Assert.assertTrue(out);
+    }
+
+    @Test
+    public void whenDoesNotHasMonoVertical() {
+        char[][] board = {
+                {' ', ' ', 'X'},
+                {' ', ' ', 'X'},
+                {' ', ' ', 'X'}
+        };
+        int column = 1;
+        boolean out = MatrixCheck.monoVertical(board, column);
+        Assert.assertFalse(out);
+    }
 
     @Test
     public void whenHasMonoHorizontal() {
