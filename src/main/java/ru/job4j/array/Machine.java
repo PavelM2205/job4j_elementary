@@ -9,10 +9,10 @@ public class Machine {
         int[] rsl = new int[100];
         int size = 0;
         int delta = money - price;
-        for (int n: coins) {
-            while (delta >= n) {
-                delta -= n;
-                rsl[size] = n;
+        for (int coin: coins) {
+            while (delta >= coin) {
+                delta -= coin;
+                rsl[size] = coin;
                 size++;
             }
         }
