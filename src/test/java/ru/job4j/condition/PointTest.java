@@ -44,7 +44,7 @@ public class PointTest {
     }
 
     @Test
-    public void when111to222Then5dot83() {
+    public void when111to222Then1dot73() {
         Point one = new Point(1, 1, 1);
         Point two = new Point(2, 2, 2);
         double expected = 1.73;
@@ -53,7 +53,7 @@ public class PointTest {
     }
 
     @Test
-    public void when123to456Then5dot83() {
+    public void when123to456Then5dot19() {
         Point one = new Point(1, 2, 3);
         Point two = new Point(4, 5, 6);
         double expected = 5.19;
